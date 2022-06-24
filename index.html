@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="sizeCalc.js" defer></script>
+    <title>Position Size Calculator</title>
+</head>
+<body>
+    <div class="card">
+        <h1>Position Size Calculator</h1>
+        <form action="#">
+            <div class="input-item">
+                <label for="entry"> Entry Price: </label>
+                <input type="text" id="entry">
+            </div>
+
+            <div class="input-item">
+                <label for="take-profit"> Take Profit: </label>
+                <input type="text" id="take-profit">
+            </div>
+
+            <div class="input-item">
+                <label for="stop-loss"> Stop Loss: </label>
+                <input type="text" id="stop-loss">
+            </div>
+
+            <div class="input-item">
+                <label for="portfolio-size"> Portfolio Total Amount: </label>
+                <input type="text" id="portfolio-size">
+            </div>
+
+            <div class="input-item">
+                <label for="risk-percent"> % Risk (of Portfolio): </label>
+                <input type="text" id="risk-percent">
+            </div>
+
+            <!-- <div class="input-item">
+                <label for="discount-percentage">Select discount %</label>
+                <select name="percentage" id="discount-percentage">
+                    <option value="0">0</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                </select>
+            </div> -->
+
+            <div class="output-item">
+                <label for="profit"> $ Profit: </label>
+                <input type="text" id="profit" disabled>
+            </div>
+            
+            <div class="output-item">
+                <label for="loss" aria-disabled="true"> $ Loss:</label>
+                <input type="text" id="loss" disabled>
+            </div> 
+
+            <div class="output-item">
+                <label for="rr" aria-disabled="true"> R:</label>
+                <input type="text" id="rr" disabled>
+            </div> 
+
+            <div class="output-item">
+                <label for="trade-size" aria-disabled="true"> Trade Size:</label>
+                <input type="text" id="trade-size" disabled>
+            </div> 
+
+            <button type="submit" class="calculate">Calculate</button>
+            <input type="reset" value="Reset" class="reset">
+        </form>
+    </div>
+</body>
+</html>
